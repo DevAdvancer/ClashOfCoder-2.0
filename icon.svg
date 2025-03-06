@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#6a0dad" />
+
+  <!-- Code brackets -->
+  <path d="M20,20 L14,32 L20,44" fill="none" stroke="#f5f0ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M44,20 L50,32 L44,44" fill="none" stroke="#f5f0ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Central code element (simple) -->
+  <rect x="27" y="24" width="10" height="16" rx="2" fill="#b19cd9" />
+  <circle cx="32" cy="32" r="4" fill="#f5f0ff" />
+
+  <!-- Subtle glow effect -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#9370db" stroke-width="1" opacity="0.6" />
+</svg>
