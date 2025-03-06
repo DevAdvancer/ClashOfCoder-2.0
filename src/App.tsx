@@ -160,7 +160,7 @@ function App() {
             transition={{ duration: 0.8 }}
             className="mb-8"
           >
-            <TypingText text="Clash of Coders 2.0" />
+            <TypingText text="Clash of Codes 2.0" />
             <p className="text-xl md:text-3xl text-gray-300 mb-8">Presented by WebDesert Technologies Private Limited</p>
             <div className="flex flex-nowrap overflow-x-auto justify-center gap-4 md:gap-8 mb-12 px-4">
                 {[
@@ -206,7 +206,7 @@ function App() {
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 300 }}
                 className="bg-gray-800 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-full text-lg shadow-lg flex items-center gap-2"
-                onClick={() => scrollToSection('event-leaders')}
+                onClick={() => scrollToSection('guidelines')}
               >
                 <motion.span whileHover={{ rotate: 360 }} transition={{ duration: 0.5 }}>
                   <BookOpen className="w-5 h-5" />
@@ -234,7 +234,7 @@ function App() {
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.2 }} 
+              viewport={{ once: false, amount: 0.2 }}
               className="text-3xl md:text-5xl font-bold text-center mb-12 md:mb-20 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400"
             >
               Event Timeline
@@ -278,7 +278,7 @@ function App() {
                     key={index}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.2 }} 
+                    viewport={{ once: false, amount: 0.2 }}
                     variants={{
                       hidden: { x: -50, opacity: 0 },
                       visible: { x: 0, opacity: 1, transition: { delay: index * 0.2 } }
@@ -308,7 +308,7 @@ function App() {
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: false, amount: 0.2 }} 
+                viewport={{ once: false, amount: 0.2 }}
                 whileHover={{ scale: 1.02 }}
                 className="bg-gray-800/30 rounded-xl p-6 backdrop-blur-lg border border-purple-500/20"
               >
@@ -330,7 +330,7 @@ function App() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: false, amount: 0.2 }} 
+        viewport={{ once: false, amount: 0.2 }}
         className="py-16 md:py-24 bg-gradient-to-b from-[#0f0f0f] to-[#0a0a0a] z-10"
       >
         <div className="container mx-auto px-4">
@@ -362,7 +362,7 @@ function App() {
                 key={index}
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: false, amount: 0.2 }} 
+                viewport={{ once: false, amount: 0.2 }}
                 transition={{ delay: index * 0.2 }}
                 whileHover={{ y: -10, scale: 1.02 }}
                 className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 p-6 md:p-8 rounded-xl backdrop-blur-xl border border-purple-500/20"
@@ -385,12 +385,12 @@ function App() {
       </motion.div>
 
       {/* Guidelines Section */}
-      <div className="py-16 md:py-24 bg-gradient-to-b from-[#0a0a0a] to-[#0f0f0f] z-10">
+      <div id="guidelines" className="py-16 md:py-24 bg-gradient-to-b from-[#0a0a0a] to-[#0f0f0f] z-10">
         <div className="container mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.2 }} 
+            viewport={{ once: false, amount: 0.2 }}
             className="text-3xl md:text-5xl font-bold text-center mb-12 md:mb-16 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400"
           >
             Guidelines
@@ -399,7 +399,7 @@ function App() {
             <motion.div
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: false, amount: 0.2 }} 
+              viewport={{ once: false, amount: 0.2 }}
               whileHover={{ scale: 1.02 }}
               className="bg-gray-800/30 p-6 md:p-8 rounded-xl backdrop-blur-lg border border-purple-500/20"
             >
@@ -423,7 +423,7 @@ function App() {
             <motion.div
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: false, amount: 0.2 }} 
+              viewport={{ once: false, amount: 0.2 }}
               whileHover={{ scale: 1.02 }}
               className="bg-gray-800/30 p-6 md:p-8 rounded-xl backdrop-blur-lg border border-purple-500/20"
             >
@@ -453,10 +453,10 @@ function App() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.2 }} 
+            viewport={{ once: false, amount: 0.2 }}
             className="text-3xl md:text-5xl font-bold text-center mb-12 md:mb-16 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400"
           >
-            Event Leaders
+            Convenor
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
             {[
@@ -466,7 +466,7 @@ function App() {
               },
               {
                 name: "Prof. (Dr.) Susanta Chakraborty",
-                role: "Dean Academics, Adamas University"
+                role: "Dean Academics, Director SOET, Adamas University"
               },
               {
                 name: "Prof. (Dr.) Sajal Saha",
@@ -477,7 +477,7 @@ function App() {
                 key={index}
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: false, amount: 0.2 }} 
+                viewport={{ once: false, amount: 0.2 }}
                 transition={{ delay: index * 0.2 }}
                 whileHover={{ y: -10, scale: 1.02 }}
                 className="bg-gray-800/30 p-6 md:p-8 rounded-xl text-center backdrop-blur-lg border border-purple-500/20"
@@ -493,7 +493,7 @@ function App() {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.2 }} 
+            viewport={{ once: false, amount: 0.2 }}
             className="text-3xl md:text-5xl font-bold text-center mb-12 md:mb-16 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400"
           >
             Coordinators
@@ -510,14 +510,14 @@ function App() {
               },
               {
                 name: "Mr. Ayushman Bilas Thakur",
-                role: "Student Coordinator"
+                role: "Faculty Coordinator"
               }
             ].map((coordinator, index) => (
               <motion.div
                 key={index}
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
-                viewport={{ once: false, amount: 0.2 }} 
+                viewport={{ once: false, amount: 0.2 }}
                 transition={{ delay: index * 0.2 }}
                 whileHover={{ y: -10, scale: 1.02 }}
                 className="bg-gray-800/30 p-6 md:p-8 rounded-xl text-center backdrop-blur-lg border border-purple-500/20"
@@ -536,7 +536,7 @@ function App() {
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{ once: false, amount: 0.2 }} 
+          viewport={{ once: false, amount: 0.2 }}
           className="text-gray-400"
         >
           Sponsored by WebDesert Technologies Private Limited
