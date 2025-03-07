@@ -294,7 +294,7 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.2 }}
               className="text-3xl md:text-5xl font-bold text-center mb-12 md:mb-20 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
-              Event Timeline
+              Event Timeline Tentative
             </motion.h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
