@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {
+  Mic,
   Shield,
   Megaphone,
   Utensils,
@@ -294,7 +295,7 @@ function App() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: false, amount: 0.2 }}
               className="text-3xl md:text-5xl font-bold text-center mb-12 md:mb-20 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">
-              Event Timeline Tentative
+              Event Timeline
             </motion.h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
@@ -303,13 +304,13 @@ function App() {
                   {
                     icon: Clock,
                     title: "Registration",
-                    time: "9:00 AM - 9:30 AM",
+                    time: "9:00 AM - 9:15 AM",
                     description: "Check-in and receive event materials.",
                   },
                   {
                     icon: Megaphone,
                     title: "Inauguration",
-                    time: "9:30 AM - 10:30 AM",
+                    time: "9:15 AM - 10:00 AM",
                     description: (
                       <ul className="list-disc list-inside text-gray-300">
                         <li>Words of wisdom from Dr. Sajal Saha</li>
@@ -317,9 +318,14 @@ function App() {
                           Award distribution for LeetCode top achievers and NAAC
                           volunteers
                         </li>
-                        {/* <li>Departmental T-shirt reveal</li> */}
                       </ul>
                     ),
+                  },
+                  {
+                    icon: Mic,
+                    title: "Talk Seminar By Mr. Abhirup Kumar",
+                    time: "10:00 AM - 10:30 AM",
+                    description: "How to Crack Competative Coding for Competetion"
                   },
                   {
                     icon: Code2,
