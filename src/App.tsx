@@ -153,6 +153,7 @@ function App() {
     }
   };
 
+
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white overflow-hidden">
       {/* Animated Background */}
@@ -243,12 +244,12 @@ function App() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.5 }}
             className="space-y-6">
-            <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6">
+            <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-6 w-full">
               <motion.button
                 whileHover={{ scale: 1.05, backgroundColor: "#7c3aed" }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="bg-purple-600 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-full text-lg shadow-lg shadow-purple-500/30 flex items-center gap-2"
+                className="bg-purple-600 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-full text-lg shadow-lg shadow-purple-500/30 flex items-center justify-center gap-2"
                 onClick={() => scrollToSection("register-form")}>
                 <motion.div
                   animate={{ rotate: 0 }}
@@ -263,7 +264,7 @@ function App() {
                 whileHover={{ scale: 1.05, backgroundColor: "#1f2937" }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="bg-gray-800 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-full text-lg shadow-lg flex items-center gap-2"
+                className="bg-gray-800 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-full text-lg shadow-lg flex items-center justify-center gap-2"
                 onClick={() => scrollToSection("guidelines")}>
                 <motion.span
                   whileHover={{ rotate: 360 }}
@@ -273,12 +274,11 @@ function App() {
                 Learn More
               </motion.button>
             </div>
-
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.8 }}
-              className="text-purple-400 text-lg mt-8">
+              className="text-yellow-400 text-lg mt-8">
               <span className="animate-pulse">⚡</span> Exclusively for First
               Year Students
             </motion.div>
@@ -745,7 +745,7 @@ function App() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: false, amount: 0.2 }}
           className="text-gray-400">
-          Sponsored by WebDesert Technologies Private Limited
+          Powered by WebDesert Technologies Private Limited
         </motion.p>
       </footer>
     </div>
