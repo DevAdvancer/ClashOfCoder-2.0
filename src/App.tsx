@@ -298,7 +298,7 @@ function App() {
               Event Timeline
             </motion.h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+            <div className="gap-8 md:gap-12">
               <div className="space-y-6 md:space-y-8">
                 {[
                   {
@@ -340,6 +340,12 @@ function App() {
                     time: "12:30 PM - 1:30 PM",
                     description:
                       "Take a break and refresh yourself before the next round.",
+                  },
+                  {
+                    icon: Gavel,
+                    title: "Round 1: Result Declaration",
+                    time: "1:30 PM - 2:00 PM",
+                    description: "Result will be declare for qualification for next round.",
                   },
                   {
                     icon: Lightbulb,
@@ -416,27 +422,6 @@ function App() {
                   </motion.div>
                 ))}
               </div>
-
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: false, amount: 0.2 }}
-                whileHover={{ scale: 1.02 }}
-                className="bg-gray-800/30 rounded-xl p-6 backdrop-blur-lg border border-purple-500/20">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://forms.office.com/Pages/ResponsePage.aspx?id=hTFwsZkt5UCG4ToiMS-vdihBJMdi_xpCsrmoTKUTOhRUOEcyS05aWjVQM1lZSkhISUtZQkVTM1JWMS4u&embed=true"
-                  frameBorder="0"
-                  style={{
-                    minHeight: "600px",
-                    border: "none",
-                    maxWidth: "100%",
-                    borderRadius: "0.75rem",
-                  }}
-                  allowFullScreen
-                />
-              </motion.div>
             </div>
           </div>
         </div>
